@@ -14,9 +14,14 @@ async function example() {
 
   $("#zeus-root").each(function(i,e){
 
+    var nama_barang = $(e).find("span.css-1bjwylw")
     var list_harga = $(e).find("span.css-o5uqvq")
     
     $(list_harga).each(function(i,e){
+      console.log(`i : ${i} and e : ${$(e).text()}`)
+    })
+
+    $(nama_barang).each(function(i,e){
       console.log(`i : ${i} and e : ${$(e).text()}`)
     })
 
