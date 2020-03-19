@@ -3,14 +3,25 @@ const cheerio = require('cheerio');
 
 const { Builder, By, Key, Util } = require("selenium-webdriver")
 var items = []
-
 async function example() {
 
   let driver = await new Builder().forBrowser("firefox").build()
-  await driver.get("https://www.tokopedia.com/search?q=processor+intel+core+i5&source=universe&st=product")
-  // var elem = await driver.findElement(By.id("zeus-root"))
-  var html = await driver.executeScript("return document.getElementsByTagName('html')[0].innerHTML");
 
+  for (var i = 1; i < 7; i++) {
+    var urltovisit = `https://www.tokopedia.com/search?q=processor%20intel%20core%20i5&source=universe&st=product&page=${i}`
+    await driver.get(urltovisit)
+    var html = await driver.executeScript("return document.getElementsByTagName('html')[0].innerHTML");
+
+    scrapePage(html)
+    driver.sleep(7000)
+
+  }
+
+  // var elem = await driver.findElement(By.id("zeus-root"))
+
+}
+
+function scrapePage(html) {
   var $ = cheerio.load(html)
 
   $("#zeus-root").each(function (i, e) {
@@ -28,7 +39,6 @@ async function example() {
     })
 
   })
-
 }
 
 function getDateToday() {
