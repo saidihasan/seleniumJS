@@ -1,0 +1,25 @@
+{
+  "name": "web-scrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "slimerjs": "^1.0.0",
+    "urllib": "^2.34.2"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0",
+    "zombie": "^6.1.4"
+  }
+}
