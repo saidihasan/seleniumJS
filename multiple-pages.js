@@ -3,17 +3,19 @@ const cheerio = require('cheerio');
 
 const { Builder, By, Key, Util } = require("selenium-webdriver")
 var items = []
+var pages
 async function example() {
 
   let driver = await new Builder().forBrowser("firefox").build()
 
-  for (var i = 1; i < 7; i++) {
+  for (var i = 1; i <= 7; i++) {
+    pages = i
     var urltovisit = `https://www.tokopedia.com/search?q=processor%20intel%20core%20i5&source=universe&st=product&page=${i}`
     await driver.get(urltovisit)
     var html = await driver.executeScript("return document.getElementsByTagName('html')[0].innerHTML");
 
     scrapePage(html)
-    driver.sleep(7000)
+    driver.sleep(10000)
 
   }
 
@@ -31,11 +33,11 @@ function scrapePage(html) {
 
 
     $(list_harga).each(function (i, e) {
-      // console.log(`i : ${i} and e : ${$(e).text()}`)
+      console.log(`${pages} i : ${i} and e : ${$(e).text()}`)
     })
 
     $(nama_barang).each(function (i, e) {
-      // console.log(`i : ${i} and e : ${$(e).text()}`)
+      console.log(`${pages} i : ${i} and e : ${$(e).text()}`)
     })
 
   })
