@@ -22,6 +22,6 @@ exports.writeToCsv = function (arrayObject, keyword, website){
         fieldDelimiter: ','
     })
     csvWriter.writeRecords(arrayObject).then(() => {
-        console.log("Done write to csv")
+        console.log(`${keyword} writed to csv`)
     })
 }

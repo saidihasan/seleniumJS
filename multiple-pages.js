@@ -3,12 +3,11 @@ const cheerio = require('cheerio');
 
 const writeToCsv = require("./tools/writeToCsv")
 
-const { Builder, By, Key, Util } = require("selenium-webdriver")
-var id = 0
+const { Builder } = require("selenium-webdriver")
 var objectResult = []
 
 //Misc
-var keyword = "i3-540 Processor"
+var keyword = `i3-2100T Processor`
 var website = "tokopedia"
 
 async function example() {
