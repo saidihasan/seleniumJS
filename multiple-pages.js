@@ -7,28 +7,44 @@ const { Builder } = require("selenium-webdriver")
 var objectResult = []
 
 //Misc
-var keyword = `i3-2100T Processor`
+// var keyword = `i3-2120T Processor`
 var website = "tokopedia"
 
 async function example() {
+  let rawjsondata = fs.readFileSync("./tools/i3json.json")
+  let jsonData = JSON.parse(rawjsondata)
 
   let driver = await new Builder().forBrowser("firefox").build()
 
-  for (var i = 1; i <= 4; i++) {
-    var urltovisit = `https://www.tokopedia.com/search?q=${keyword}&source=universe&st=product&page=${i}`
-    await driver.get(urltovisit)
-    var html = await driver.executeScript("return document.getElementsByTagName('html')[0].innerHTML");
+  for (var j = 0; j < jsonData.length; j++) {
+    var keyword = `${jsonData[j].processor_name}`
+    var id_processor = `${jsonData[j].id}`
+    console.log(j)
 
-    await scrapePage(html)
-    await driver.sleep(7000)
+    for (var i = 1; i <= 4; i++) {
+      var urltovisit = `https://www.tokopedia.com/search?q=${keyword} Processor&source=universe&st=product&page=${i}`
+      await driver.get(urltovisit)
+      var html = await driver.executeScript("return document.getElementsByTagName('html')[0].innerHTML");
+
+      await scrapePage(html, id_processor)
+      await driver.sleep(7000)
+      if (i === 4) {
+        await writeToCsv.writeToCsv(objectResult, keyword, website)
+        break
+      }
+
+    }
+
+
 
   }
 
-  await writeToCsv.writeToCsv(objectResult, keyword, website)
+
+
 
 }
 
-async function scrapePage(html) {
+async function scrapePage(html, id_processor) {
 
   var $ = cheerio.load(html)
 
@@ -63,7 +79,7 @@ async function scrapePage(html) {
       // console.log(`${nama_barang[i]} ${harga[i]}`)
       objectResult.push({
         date: getDateToday(),
-        id_processor: 289,
+        id_processor: id_processor,
         nama_barang: nama_barang[i],
         harga: harga[i],
         url: url[i],

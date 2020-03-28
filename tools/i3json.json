@@ -1,0 +1,202 @@
+[
+  {
+    "id": 302,
+    "processor_name": "i3-3220"
+  },
+  {
+    "id": 303,
+    "processor_name": "i3-3220T"
+  },
+  {
+    "id": 304,
+    "processor_name": "i3-3225"
+  },
+  {
+    "id": 307,
+    "processor_name": "i3-3245"
+  },
+  {
+    "id": 308,
+    "processor_name": "i3-3250"
+  },
+  {
+    "id": 309,
+    "processor_name": "i3-3250T"
+  },
+  {
+    "id": 310,
+    "processor_name": "i3-4130"
+  },
+  {
+    "id": 311,
+    "processor_name": "i3-4130T"
+  },
+  {
+    "id": 312,
+    "processor_name": "i3-4150"
+  },
+  {
+    "id": 313,
+    "processor_name": "i3-4150T"
+  },
+  {
+    "id": 314,
+    "processor_name": "i3-4160"
+  },
+  {
+    "id": 315,
+    "processor_name": "i3-4160T"
+  },
+  {
+    "id": 316,
+    "processor_name": "i3-4170"
+  },
+  {
+    "id": 317,
+    "processor_name": "i3-4170T"
+  },
+  {
+    "id": 318,
+    "processor_name": "i3-4330"
+  },
+  {
+    "id": 319,
+    "processor_name": "i3-4330T"
+  },
+  {
+    "id": 320,
+    "processor_name": "i3-4340"
+  },
+  {
+    "id": 321,
+    "processor_name": "i3-4350"
+  },
+  {
+    "id": 322,
+    "processor_name": "i3-4350T"
+  },
+  {
+    "id": 323,
+    "processor_name": "i3-4360"
+  },
+  {
+    "id": 324,
+    "processor_name": "i3-4360T"
+  },
+  {
+    "id": 325,
+    "processor_name": "i3-4370"
+  },
+  {
+    "id": 326,
+    "processor_name": "i3-4370T"
+  },
+  {
+    "id": 327,
+    "processor_name": "i3-6098P"
+  },
+  {
+    "id": 328,
+    "processor_name": "i3-6100"
+  },
+  {
+    "id": 329,
+    "processor_name": "i3-6100T"
+  },
+  {
+    "id": 330,
+    "processor_name": "i3-6300"
+  },
+  {
+    "id": 331,
+    "processor_name": "i3-6300T"
+  },
+  {
+    "id": 332,
+    "processor_name": "i3-6320"
+  },
+  {
+    "id": 333,
+    "processor_name": "i3-7100"
+  },
+  {
+    "id": 334,
+    "processor_name": "i3-7100T"
+  },
+  {
+    "id": 335,
+    "processor_name": "i3-7101E"
+  },
+  {
+    "id": 336,
+    "processor_name": "i3-7101TE"
+  },
+  {
+    "id": 337,
+    "processor_name": "i3-7300"
+  },
+  {
+    "id": 338,
+    "processor_name": "i3-7300T"
+  },
+  {
+    "id": 339,
+    "processor_name": "i3-7320"
+  },
+  {
+    "id": 340,
+    "processor_name": "i3-7350K"
+  },
+  {
+    "id": 341,
+    "processor_name": "i3-8100"
+  },
+  {
+    "id": 342,
+    "processor_name": "i3-8100T"
+  },
+  {
+    "id": 343,
+    "processor_name": "i3-8300"
+  },
+  {
+    "id": 344,
+    "processor_name": "i3-8300T"
+  },
+  {
+    "id": 345,
+    "processor_name": "i3-8350K"
+  },
+  {
+    "id": 346,
+    "processor_name": "i3-9100"
+  },
+  {
+    "id": 347,
+    "processor_name": "i3-9100F"
+  },
+  {
+    "id": 348,
+    "processor_name": "i3-9100T"
+  },
+  {
+    "id": 349,
+    "processor_name": "i3-9300"
+  },
+  {
+    "id": 350,
+    "processor_name": "i3-9300T"
+  },
+  {
+    "id": 351,
+    "processor_name": "i3-9320"
+  },
+  {
+    "id": 352,
+    "processor_name": "i3-9350K"
+  },
+  {
+    "id": 353,
+    "processor_name": "i3-9350KF"
+  }
+]
