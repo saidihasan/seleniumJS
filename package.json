@@ -20,7 +20,7 @@
     "urllib": "^2.34.2"
   },
   "devDependencies": {
-    "mocha": "^7.1.0",
+    "mocha": "^10.2.0",
     "zombie": "^6.1.4"
   }
 }
